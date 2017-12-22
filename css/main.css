@@ -1,0 +1,579 @@
+body {
+	height: 400px;
+	margin: 0px;
+}
+
+/* Name */
+
+.name {
+	width: 280px;
+	text-align: center;
+	border: 10px #0abab5 solid;
+	font-size: 60px;
+	background-color: #fff;
+	color: purple;
+	font-family: 'Playball', cursive;
+}
+
+/* Tree */
+
+.tree {	
+	float: left;
+	background-color: pink;
+	height: 400px;
+	margin-left: 39%;
+	width: 300px ;
+	
+}
+
+.all {
+	height: 100%;
+}
+
+/* Trunk */
+
+.trunk {
+	 border-color: brown transparent;
+	 border-style: solid;
+	 border-width: 0px 15px 200px;
+	 box-shadow: 12px 1px 12px 1px #654321;
+	 margin-left: 140px;
+	 margin-top: -340px;
+	 width: 0px;
+}
+
+
+/*Branches*/
+
+.branches {
+	height: 300px;
+	position: absolute;
+	top: 95px;
+	width: 300px;
+}
+
+
+.branches-container {
+	height: 300px;
+	position: absolute;
+
+	width: 300px;
+}
+
+.branch {
+	border-color: teal transparent;
+	border-style: solid;
+	height: 0px;
+	width: 0;
+	border-width: 0 100px 120px;		
+}
+
+.top {
+	
+	border-bottom-left-radius: 50% 100px;
+	border-bottom-right-radius: 50% 100px;
+	position: absolute;
+	left: 50px;	
+}
+
+.middle {
+	
+	border-bottom-left-radius: 50% 60px;
+	border-bottom-right-radius: 50% 60px;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
+
+.bottom {
+	
+	border-bottom-left-radius: 50% 20px;
+	border-bottom-right-radius: 50% 20px;
+	position: absolute;
+	left: 50px;
+	top: 100px;
+} 
+
+
+
+
+/*Lights*/
+
+	.lights-box {
+		height: 400px;	
+		position: relative;	
+	}
+
+	.glow:nth-child(even) {
+		background: #ff0000;
+		opacity: 1;
+		box-shadow: none;
+		animation: glow-pulse-1 0.8s linear 0s infinite alternate;
+	}
+
+	.glow:nth-child(odd) {
+		background: #fff;
+		opacity: .8;
+		box-shadow: none;
+		animation: glow-pulse-2 0.8s linear 0s infinite alternate;
+	}
+
+	@keyframes glow-pulse-1 {
+		from {box-shadow: 1px 1px 15px #ff0000, -1px -1px 15px #ff0000; opacity 1;}
+		to {box-shadow: none; opacity 3;}
+	}
+
+	@keyframes glow-pulse-2 {
+		from {box-shadow: none; opacity .3;}
+		to {box-shadow: 1px 1px 15px #fff, -1px -1px 15px #fff; opacity 1;}
+	}
+
+	.one {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 96px;
+		margin: 0px;
+		padding: 0px;
+		position: absolute;	
+		top: 57px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.two {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 97px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 61px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.three {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 107px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 65px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.four {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 117px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 69px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.five {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 127px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 73px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.six {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 137px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 77px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.seven {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 147px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 81px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.eight {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 157px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 85px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.nine {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 167px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 89px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.ten {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 177px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 93px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.eleven {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 184px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 97px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.twelve {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 78px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 120px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.thirteen {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 88px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 124px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.fourteen {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 98px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 128px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.fifteen {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 108px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 132px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.sixteen {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 118px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 136px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.seventeen {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 128px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 140px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.eighteen {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 138px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 144px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.nineteen {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 148px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 148px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.twenty {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 158px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 152px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.twenty-one {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 168px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 156px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.twenty-two {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 178px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 160px;
+		width: 10px;
+		z-index: 10;
+	}
+
+	.twenty-three {
+		background: #fff;
+		border: solid 1px #fff;
+		border-radius: 50%;
+		display: inline-block;
+		height: 10px;	
+		left: 188px;
+		list-style-type: none;
+		margin: 0px 10px;
+		padding: 0px;
+		position: absolute;	
+		top: 164px;
+		width: 10px;
+		z-index: 10;
+	}
+
+
+
+/* Bulbs */
+
+
+.first {
+	position: absolute;
+	background-color: gold;
+	left: 134px;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 50%;
+	z-index: 10;
+	top: 30px;
+}
+
+.second {
+	position: absolute;
+	background-color: #800080;
+	left: 110px;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 50%;
+	z-index: 10;
+	top: 90px;
+}
+
+.third {
+	position: absolute;
+	background-color: gold;
+	left: 160px;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 50%;
+	z-index: 10;
+	top: 110px;
+}
+
+.fourth {
+	position: absolute;
+	bottom: 50px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 50%;
+	z-index: 10;
+	left: 100px;
+	background-color: gold;
+	top: 175px;
+}
+
+.fifth {
+	position: absolute;
+	background-color: #800080;
+	left: 165px;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	border-radius: 50%;
+	z-index: 10;
+	top: 180px;
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
