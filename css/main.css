@@ -1,3 +1,13 @@
+/* Colors 
+#652770; purple
+#a33643; red
+#448f30; green
+#99a637; light green
+
+*/
+
+
+
 body {
 	height: 400px;
 	margin: 0px;
@@ -6,21 +16,21 @@ body {
 /* Name */
 
 .name {
-	width: 280px;
-	text-align: center;
-	border: 10px #0abab5 solid;
-	font-size: 60px;
-	background-color: #fff;
-	color: purple;
+	width: 300px;
+	text-align: center;	
+	font-size: 71px;
+	background: #fff;
+	color: #652770;
 	font-family: 'Playball', cursive;
+	padding-bottom: 2px;
 }
 
 /* Tree */
 
 .tree {	
 	float: left;
-	background-color: pink;
-	height: 400px;
+	background-color: #fff;
+	height: 360px;
 	margin-left: 39%;
 	width: 300px ;
 	
@@ -37,7 +47,7 @@ body {
 	 border-style: solid;
 	 border-width: 0px 15px 200px;
 	 box-shadow: 12px 1px 12px 1px #654321;
-	 margin-left: 140px;
+	 margin-left: 135px;
 	 margin-top: -340px;
 	 width: 0px;
 }
@@ -54,14 +64,14 @@ body {
 
 
 .branches-container {
-	height: 300px;
+	height: 250px;
 	position: absolute;
-
+	border-bottom: 13px #99a637 solid;
 	width: 300px;
 }
 
 .branch {
-	border-color: teal transparent;
+	border-color: #448f30 transparent;
 	border-style: solid;
 	height: 0px;
 	width: 0;
@@ -502,7 +512,7 @@ body {
 
 .first {
 	position: absolute;
-	background-color: gold;
+	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
 	left: 134px;
 	bottom: 30px;
 	width: 30px;
@@ -515,7 +525,7 @@ body {
 
 .second {
 	position: absolute;
-	background-color: #800080;
+	background: linear-gradient(0deg, #5b1d6f, #800080 40%, #f135f8);
 	left: 110px;
 	bottom: 30px;
 	width: 30px;
@@ -528,7 +538,7 @@ body {
 
 .third {
 	position: absolute;
-	background-color: gold;
+	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
 	left: 160px;
 	bottom: 30px;
 	width: 30px;
@@ -548,13 +558,13 @@ body {
 	border-radius: 50%;
 	z-index: 10;
 	left: 100px;
-	background-color: gold;
+	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
 	top: 175px;
 }
 
 .fifth {
 	position: absolute;
-	background-color: #800080;
+	background: linear-gradient(0deg, #5b1d6f, #800080 40%, #f135f8);
 	left: 165px;
 	bottom: 30px;
 	width: 30px;
