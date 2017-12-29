@@ -509,6 +509,13 @@ body {
 
 /* Bulbs */
 
+.bulb--position {
+		position: relative;	
+}
+
+.bulb--height {
+	height: 400px;	
+}
 
 .first {
 	position: absolute;
