@@ -1,589 +1,624 @@
-/* Colors 
-#652770; purple
-#a33643; red
+/********* Colors *********
+#654321; brown
 #448f30; green
 #99a637; light green
-
+#652770; purple
+#ff0000; red
 */
 
 
-
+/********** Body ************/
 body {
-	height: 400px;
+	height: 300px;
 	margin: 0px;
 }
+/********** End Body ************/
 
-/* Name */
 
-.name {
-	width: 300px;
-	text-align: center;	
-	font-size: 71px;
-	background: #fff;
-	color: #652770;
+
+/********** Name ************/
+
+.name {	
+	background: #fff; /* White Color*/
+	color: #652770; /* Purple Color*/
 	font-family: 'Playball', cursive;
+	font-size: 71px;
 	padding-bottom: 2px;
+	text-align: center;	
 }
 
-/* Tree */
+.name--position {	
+	left: 39%;
+	margin: 0;
+	position: absolute;
+	z-index: 1;
+}
 
-.tree {	
-	float: left;
-	background-color: #fff;
-	height: 300px;
+.name--heightWidth {
+	height: 120px;
+	width: 300px;
+}
+/********** End Name ************/
+
+
+
+/************* Tree *************/
+
+.tree {		
+	background-color: #fff; /* White Color*/
+}
+
+.tree--position {
 	margin-left: 39%;
-	width: 300px ;
-	
+	position: relative;
 }
 
-height: 100%;
-}
-
-/* Trunk */
-
-.trunk {
-	 border-color: brown transparent;
-	 border-style: solid;
-	 border-width: 0px 15px 200px;
-	 box-shadow: 12px 1px 12px 1px #654321;
-	 margin-left: 135px;
-	 margin-top: -340px;
-	 width: 0px;
-}
-
-
-/*Branches*/
-
-.branches {
+.tree--height {
 	height: 300px;
-	position: absolute;
-	top: 95px;
-	width: 300px;
+	width: 300px ;
 }
+/************* End Tree *************/
 
 
-.branches-container {
-	height: 250px;
-	position: absolute;
-	border-bottom: 13px #99a637 solid;
-	width: 300px;
-}
+
+/************* Branches *************/
 
 .branch {
-	border-color: #448f30 transparent;
-	border-style: solid;
-	height: 0px;
+	border-bottom: 2px #99a637 solid; /* Light Green Color */		
+}
+
+.branch--position {
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+
+.branch--heightWidth {
+	height: 298px;
+	width: 300px;
+}
+
+.branch__top {
+	border-bottom: 100px solid #448f30; /* Green Color */
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	height:0;
+	left: 70px;
+	position:absolute;
+	top: 80px;
 	width: 0;
-	border-width: 0 100px 120px;		
 }
 
-.top {
+.branch__middle {
 	
-	border-bottom-left-radius: 50% 100px;
-	border-bottom-right-radius: 50% 100px;
-	position: absolute;
-	left: 50px;	
+	border-bottom: 110px solid #448f30; /* Green Color */
+	border-left: 90px solid transparent;
+	border-right: 90px solid transparent;
+	height:0;
+	left: 60px;
+	position:absolute;
+	top: 125px;
+	width: 0;
 }
 
-.middle {
+.branch__bottom {
 	
-	border-bottom-left-radius: 50% 60px;
-	border-bottom-right-radius: 50% 60px;
-	position: absolute;
+	border-bottom: 120px solid #448f30; /* Green Color */
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	height:0;
 	left: 50px;
-	top: 50px;
-}
-
-.bottom {
-	
-	border-bottom-left-radius: 50% 20px;
-	border-bottom-right-radius: 50% 20px;
-	position: absolute;
-	left: 50px;
-	top: 100px;
+	position:absolute;
+	top: 165px;
+	width: 0;
 } 
+/************* End Branches *************/
 
 
 
-
-/*Lights*/
-
-	.lights-box {
-		height: 400px;	
-		position: relative;	
-	}
-
-	.glow:nth-child(even) {
-		background: #ff0000;
-		opacity: 1;
-		box-shadow: none;
-		animation: glow-pulse-1 0.8s linear 0s infinite alternate;
-	}
-
-	.glow:nth-child(odd) {
-		background: #fff;
-		opacity: .8;
-		box-shadow: none;
-		animation: glow-pulse-2 0.8s linear 0s infinite alternate;
-	}
-
-	@keyframes glow-pulse-1 {
-		from {box-shadow: 1px 1px 15px #ff0000, -1px -1px 15px #ff0000; opacity 1;}
-		to {box-shadow: none; opacity 3;}
-	}
-
-	@keyframes glow-pulse-2 {
-		from {box-shadow: none; opacity .3;}
-		to {box-shadow: 1px 1px 15px #fff, -1px -1px 15px #fff; opacity 1;}
-	}
-
-	.one {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 96px;
-		margin: 0px;
-		padding: 0px;
-		position: absolute;	
-		top: 57px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.two {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 97px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 61px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.three {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 107px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 65px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.four {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 117px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 69px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.five {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 127px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 73px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.six {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 137px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 77px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.seven {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 147px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 81px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.eight {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 157px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 85px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.nine {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 167px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 89px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.ten {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 177px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 93px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.eleven {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 184px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 97px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.twelve {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 78px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 120px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.thirteen {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 88px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 124px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.fourteen {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 98px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 128px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.fifteen {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 108px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 132px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.sixteen {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 118px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 136px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.seventeen {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 128px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 140px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.eighteen {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 138px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 144px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.nineteen {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 148px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 148px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.twenty {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 158px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 152px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.twenty-one {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 168px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 156px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.twenty-two {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 178px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 160px;
-		width: 10px;
-		z-index: 10;
-	}
-
-	.twenty-three {
-		background: #fff;
-		border: solid 1px #fff;
-		border-radius: 50%;
-		display: inline-block;
-		height: 10px;	
-		left: 188px;
-		list-style-type: none;
-		margin: 0px 10px;
-		padding: 0px;
-		position: absolute;	
-		top: 164px;
-		width: 10px;
-		z-index: 10;
-	}
-
-
-
-/* Bulbs */
+/************* Bulbs *************/
 
 .bulb--position {
-		position: relative;	
-		top: 400px;
-		left: 400px;
+	position: absolute;
+	top: 65px;
 }
 
-.bulb--height {
-	height: 400px;	
-
+.bulb--heightWidth {
+	height: 235px;
+	width: 300px;
 }
 
 .bulb__one {
-	position: absolute;
 	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
-	left: 134px;
-	bottom: 30px;
-	width: 30px;
-	height: 30px;
 	border: 2px solid white;
 	border-radius: 50%;
-	z-index: 10;
+	bottom: 30px;
+	height: 30px;
+	left: 134px;
+	position: absolute;
 	top: 30px;
+	width: 30px;
+	z-index: 10;
 }
 
 .bulb__two {
-	position: absolute;
 	background: linear-gradient(0deg, #5b1d6f, #800080 40%, #f135f8);
-	left: 110px;
-	bottom: 30px;
-	width: 30px;
-	height: 30px;
 	border: 2px solid white;
 	border-radius: 50%;
-	z-index: 10;
+	bottom: 30px;
+	height: 30px;
+	left: 110px;
+	position: absolute;
 	top: 90px;
+	width: 30px;
+	z-index: 10;
 }
 
-.bulb__three {
-	position: absolute;
+.bulb__three {	
 	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
-	left: 160px;
-	bottom: 30px;
-	width: 30px;
-	height: 30px;
 	border: 2px solid white;
 	border-radius: 50%;
-	z-index: 10;
+	bottom: 30px;	
+	height: 30px;
+	left: 160px;
+	position: absolute;
 	top: 110px;
+	width: 30px;
+	z-index: 10;
 }
 
 .bulb__four {
-	position: absolute;
-	bottom: 50px;
-	width: 30px;
-	height: 30px;
-	border: 2px solid white;
-	border-radius: 50%;
-	z-index: 10;
-	left: 100px;
 	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
+	border: 2px solid white;
+	border-radius: 50%;	
+	bottom: 50px;	
+	height: 30px;	
+	left: 100px;
+	position: absolute;
 	top: 175px;
+	width: 30px;
+	z-index: 10;
 }
 
 .bulb__five {
-	position: absolute;
 	background: linear-gradient(0deg, #5b1d6f, #800080 40%, #f135f8);
-	left: 165px;
-	bottom: 30px;
-	width: 30px;
-	height: 30px;
 	border: 2px solid white;
 	border-radius: 50%;
-	z-index: 10;
+	bottom: 30px;
+	height: 30px;
+	left: 165px;
+	position: absolute;
 	top: 180px;
+	width: 30px;
+	z-index: 10;
+}
+/************* End Bulbs *************/
+
+
+
+/************* Lights Animation *************/
+	
+	.lights__animation:nth-child(even) {
+		animation: lights__animation-pulse-1 0.8s linear 0s infinite alternate;
+		background: #ff0000; /* Red Color */
+		box-shadow: none;
+		opacity: 1;
+	}
+
+	.lights__animation:nth-child(odd) {
+		animation: lights__animation-pulse-2 0.8s linear 0s infinite alternate;
+		background: #fff; /* White Color */
+		box-shadow: none;
+		opacity: .8;
+	}
+
+	@keyframes lights__animation-pulse-1 {
+		from {box-shadow: 1px 1px 15px #ff0000 /* Red Color */, -1px -1px 15px #ff0000 /* Red Color */; opacity 1;}
+		to {box-shadow: none; opacity 3;}
+	}
+
+	@keyframes lights__animation-pulse-2 {
+		from {box-shadow: none; opacity .3;}
+		to {box-shadow: 1px 1px 15px #fff /* White Color*/, -1px -1px 15px #fff /* White Color*/; opacity 1;}
+	}
+/************* End Lights Animation *************/
+
+
+
+/************* Lights *************/
+
+.lights {
+		
 }
 
+.lights--position {		
+	left: 10px;
+	position: absolute;	
+	top: 65px;
+	z-index: 3;
+	}
+
+.lights--heightWidth {
+	height: 235px;	
+	width: 290px;
+}
+
+.lights__one {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 96px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;	
+	top: 57px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__two {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 97px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 61px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__three {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 107px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 65px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__four {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 117px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 69px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__five {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 127px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 73px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__six {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 137px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 77px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__seven {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 147px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 81px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__eight {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 157px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 85px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__nine {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 167px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 89px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__ten {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 177px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 93px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__eleven {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 184px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 97px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__twelve {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 78px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 120px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__thirteen {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 88px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 124px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__fourteen {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 98px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 128px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__fifteen {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 108px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 132px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__sixteen {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 118px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 136px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__seventeen {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 128px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 140px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__eighteen {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 138px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 144px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__nineteen {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 148px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 148px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__twenty {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 158px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 152px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__twenty-one {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 168px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 156px;
+	width: 10px;
+	z-index: 10;
+}
+
+.lights__twenty-two {
+	background: #fff; /* White Color*/
+	border: solid 1px #fff; /* White Color*/
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;	
+	left: 178px;
+	list-style-type: none;
+	margin: 0px 10px;
+	padding: 0px;
+	position: absolute;	
+	top: 160px;
+	width: 10px;
+	z-index: 10;
+}
+/************* End Lights *************/
+
+
+
+/************* Trunk *************/
+
+.trunk {
+	border-color: brown transparent;
+	border-style: solid;
+	border-width: 0px 15px 200px;
+	box-shadow: 12px 1px 12px 1px #654321; /* Brown Color */	 
+	margin-left: 135px;
+	margin-top: 0px;
+}
+
+.trunk--position {	
+	position: absolute;	
+	z-index: 0;
+}
+
+.trunk--heightWidth {
+	height: 100px;
+	width: 0px;
+}
+/************* End Trunk *************/
 	
 
 
