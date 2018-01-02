@@ -1,8 +1,13 @@
 /********* Colors *********
 #654321; brown
+#fafad6; cream
+#5b1d6f; dark Purple
 #448f30; green
+#d8d618; light Gold
 #99a637; light green
+#f135f8; light Purple
 #652770; purple
+#800080; purple
 #ff0000; red
 */
 
@@ -130,7 +135,7 @@ body {
 }
 
 .bulb__one {
-	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
+	background: linear-gradient(0deg, #d8d618 /*Light Gold*/, gold 40%, #fafad6 /*Cream*/);
 	border: 2px solid white;
 	border-radius: 50%;
 	bottom: 30px;
@@ -143,7 +148,7 @@ body {
 }
 
 .bulb__two {
-	background: linear-gradient(0deg, #5b1d6f, #800080 40%, #f135f8);
+	background: linear-gradient(0deg, #5b1d6f /*Dark Purple*/, #800080 40% /*Purple*/, #f135f8 /*Light Purple*/);
 	border: 2px solid white;
 	border-radius: 50%;
 	bottom: 30px;
@@ -156,7 +161,7 @@ body {
 }
 
 .bulb__three {	
-	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
+	background: linear-gradient(0deg, #d8d618 /*Light Gold*/, gold 40%, #fafad6 /*Cream*/);
 	border: 2px solid white;
 	border-radius: 50%;
 	bottom: 30px;	
@@ -169,7 +174,7 @@ body {
 }
 
 .bulb__four {
-	background: linear-gradient(0deg, #d8d618, gold 40%, #fafad6);
+	background: linear-gradient(0deg, #d8d618 /*Light Gold*/, gold 40%, #fafad6 /*Cream*/);
 	border: 2px solid white;
 	border-radius: 50%;	
 	bottom: 50px;	
@@ -182,7 +187,7 @@ body {
 }
 
 .bulb__five {
-	background: linear-gradient(0deg, #5b1d6f, #800080 40%, #f135f8);
+	background: linear-gradient(0deg, #5b1d6f /*Dark Purple*/, #800080 40% /*Purple*/, #f135f8 /*Light Purple*/);
 	border: 2px solid white;
 	border-radius: 50%;
 	bottom: 30px;
@@ -199,29 +204,29 @@ body {
 
 /************* Lights Animation *************/
 	
-	.lights__animation:nth-child(even) {
-		animation: lights__animation-pulse-1 0.8s linear 0s infinite alternate;
-		background: #ff0000; /* Red Color */
-		box-shadow: none;
-		opacity: 1;
-	}
+.lights__animation:nth-child(even) {
+	animation: lights__animation-pulse-1 0.8s linear 0s infinite alternate;
+	background: #ff0000; /* Red Color */
+	box-shadow: none;
+	opacity: 1;
+}
 
-	.lights__animation:nth-child(odd) {
-		animation: lights__animation-pulse-2 0.8s linear 0s infinite alternate;
-		background: #fff; /* White Color */
-		box-shadow: none;
-		opacity: .8;
-	}
+.lights__animation:nth-child(odd) {
+	animation: lights__animation-pulse-2 0.8s linear 0s infinite alternate;
+	background: #fff; /* White Color */
+	box-shadow: none;
+	opacity: .8;
+}
 
-	@keyframes lights__animation-pulse-1 {
-		from {box-shadow: 1px 1px 15px #ff0000 /* Red Color */, -1px -1px 15px #ff0000 /* Red Color */; opacity 1;}
-		to {box-shadow: none; opacity 3;}
-	}
+@keyframes lights__animation-pulse-1 {
+	from {box-shadow: 1px 1px 15px #ff0000 /* Red Color */, -1px -1px 15px #ff0000 /* Red Color */; opacity 1;}
+	to {box-shadow: none; opacity 3;}
+}
 
-	@keyframes lights__animation-pulse-2 {
-		from {box-shadow: none; opacity .3;}
-		to {box-shadow: 1px 1px 15px #fff /* White Color*/, -1px -1px 15px #fff /* White Color*/; opacity 1;}
-	}
+@keyframes lights__animation-pulse-2 {
+	from {box-shadow: none; opacity .3;}
+	to {box-shadow: 1px 1px 15px #fff /* White Color*/, -1px -1px 15px #fff /* White Color*/; opacity 1;}
+}
 /************* End Lights Animation *************/
 
 
